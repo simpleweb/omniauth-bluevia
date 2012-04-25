@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "omniauth-bluevia"
   gem.require_paths = ["lib"]
   gem.version       = Omniauth::Bluevia::VERSION
+
+   gem.add_dependency 'omniauth', '~> 1.0'
+   gem.add_dependency 'omniauth-oauth', '~> 1.0'
 end
