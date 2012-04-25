@@ -1,12 +1,18 @@
 # Omniauth::Bluevia
 
-TODO: Write a gem description
+OmniAuth strategy for connecting with [BlueVia
+connect's](https://bluevia.com/en/) OAuth API.
+
+You'll need to create a BlueVia account and register an new application
+[here](https://bluevia.com/en/api-keys/get-commercial).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-bluevia'
+```ruby
+gem 'omniauth-bluevia'
+```
 
 And then execute:
 
@@ -18,7 +24,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+use OmniAuth::Builder do
+  provider :bluevia, ENV['BLUEVIA_KEY'], ENV['BLUEVIA_SECRET']
+end
+```
 
 ## Contributing
 
