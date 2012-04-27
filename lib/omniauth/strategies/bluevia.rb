@@ -12,8 +12,6 @@ module OmniAuth
         :authorize_url => 'https://connect.bluevia.com/authorise/',
         :scheme => :header
       }
-
-      uid { puts request.inspect }
     end
   end
 end
