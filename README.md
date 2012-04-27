@@ -6,6 +6,11 @@ connect's](https://bluevia.com/en/) OAuth API.
 You'll need to create a BlueVia account and register an new application
 [here](https://bluevia.com/en/api-keys/get-commercial).
 
+Please note that due to limitations in the way BlueVia has implemented
+OAuth, it is not possible to get a `uid` for the user, therefore the
+auth hash should just be used for credentials that are stored against a
+local user account, rather than use this as a full blown auth system.
+
 ## Installation
 
 Add this line to your application's Gemfile:
